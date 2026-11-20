@@ -1,0 +1,56 @@
+# Muxo Composio Composition Interface — Stripe Projects template manifest
+# Modeled after https://github.com/stripe/projects-template-registry/example/example.yaml
+guided:
+  category: saas
+  framework: nextjs
+
+template: muxo/composio-composition
+variant: composio-fullstack
+default: true
+variant_description: Composio • Muxo Governance • 1,700+ toolkits
+
+metadata:
+  name: Muxo Composio Composition Interface
+  description: Governed Composio meta-tools for discovery, connection management, multi-execution, triggers, schemas, and remote sandbox workbench
+  owner: muxo
+  tags:
+    - Composio
+    - MCP
+    - Tool Discovery
+    - OAuth
+    - Multi-Execution
+    - Triggers
+    - Sandbox
+
+services:
+  - composio/sdk
+  - composio/instant
+  - composio/workbench
+
+next_steps:
+  - label: Discover toolkits
+    command: muxo search "list github issues" --lane composio_sdk --toolkit github
+  - label: Inspect tool schema
+    command: muxo inspect app.github.list_issues
+  - label: Connect an app
+    command: muxo link github --wait
+  - label: Run a governed plan
+    command: muxo plan app.github.list_issues --input '{"owner":"acme","repo":"api","limit":10}'
+  - label: Execute read-only fast path
+    command: muxo exec app.github.list_issues --input '{"owner":"acme","repo":"api","limit":10}'
+  - label: Open Muxo console
+    command: open https://app.muxo.ai
+
+tier_plans:
+  composio/sdk:
+    free_lowest_cost: Muxo/Free
+    starter_paid: Muxo/Starter
+    higher_scale: Muxo/Pro
+  composio/instant:
+    free_lowest_cost: Muxo/Free
+    starter_paid: Muxo/Starter
+    higher_scale: Muxo/Pro
+  composio/workbench:
+    free_lowest_cost: Muxo/Free
+    starter_paid: Muxo/Starter
+    higher_scale: Muxo/Pro

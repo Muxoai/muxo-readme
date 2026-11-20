@@ -77,6 +77,20 @@ codex mcp add muxo --url https://api.muxo.ai/mcp
 
 Full walkthrough: [docs.muxo.ai/quickstart](https://docs.muxo.ai/quickstart).
 
+## Skills and docs
+
+This repository also holds the public documentation and the skill playbooks the Muxo plugin
+installs, so you can read them on GitHub:
+
+- [`docs/`](./docs) — quickstart links, the agent docs (`skill.md`, `llms.txt`, `llms-full.txt`),
+  and an index of every skill.
+- [`skills/`](./skills) — the SKILL.md playbooks. Start with
+  [`skills/muxo/SKILL.md`](./skills/muxo/SKILL.md); it routes to the right one for an app, a
+  workflow, or a use case.
+
+The same material is served at [docs.muxo.ai](https://docs.muxo.ai) and, over MCP, as the
+resources `muxo://skills` and `muxo://skill/{slug}`.
+
 ## Plans
 
 | Plan | Price | Included |

@@ -1,0 +1,85 @@
+# Muxo
+
+> Muxo connects Claude Code, Codex, Cursor, Droid, ChatGPT, or Claude Desktop to 1,700+ apps and APIs, 53 cloud providers, and 73 instant toolkits that need no sign-in. Provision cloud, call any API, and change your apps — with every change behind your approval. Built for solo developers, founders, and small dev teams.
+
+The harness is the main control surface. The console at https://app.muxo.ai is for reviewing activity, approvals, apps, rules, memory, and billing, not a second chat app.
+
+Reads run immediately. By default, changes wait for the person's confirmation or approval. App consent, task approval, and payment are separate decisions. Check the original action's status before repeating uncertain work.
+
+What Muxo can reach: 1,700+ apps, APIs and services; 53 cloud providers to provision (Postgres, Redis, hosting, auth and more); 73 instant toolkits that need no account; and 10 built-in checks for DNS, TLS, security headers, AI readiness and package vulnerabilities.
+
+## Start here
+
+- [Overview](https://docs.muxo.ai/): What Muxo does in your existing harness.
+- [Connect your harness](https://docs.muxo.ai/quickstart): Claude Code, Codex, Cursor, and Droid. No Muxo CLI or key needed.
+- [How it works](https://docs.muxo.ai/how-it-works): Ask, connect when needed, review, and continue.
+
+## Work in your harness
+
+- [Ask for work](https://docs.muxo.ai/guides/discovery): Describe the result and limits in your own words.
+- [Apps and approvals](https://docs.muxo.ai/guides/accounts-and-approvals): Connect the right account and approve a specific change.
+- [Memory and rules](https://docs.muxo.ai/guides/workspaces-and-knowledge): Save shared or personal defaults, and set rules in plain words, including temporary rules, content checks, and member suggestions.
+- [Workspaces and teams](https://docs.muxo.ai/guides/workspaces-and-teams): Switch workspaces, team roles, invitations, and member budgets.
+- [Cloud services](https://docs.muxo.ai/resources): Review provider, configuration, price, and approval.
+- [Prompts to try](https://docs.muxo.ai/use-cases): Focused examples to adapt to your project.
+- [History and recovery](https://docs.muxo.ai/guides/run-and-recover): Check what finished before retrying.
+- [Plans and credits](https://docs.muxo.ai/billing): Actions, tool credits, and provider charges are different.
+- [Availability](https://docs.muxo.ai/availability): A listing or connection does not prove an action works.
+- [Safety and privacy](https://docs.muxo.ai/security): Approval defaults, credentials, and honest recovery limits.
+- [Get help](https://docs.muxo.ai/support)
+
+## Agent instructions
+
+- [Agent skill](https://muxo.ai/skill.md): Request handling, consent, approvals, results, and recovery.
+- [Full agent reference](https://muxo.ai/llms-full.txt)
+- [Sign-in guide](https://muxo.ai/auth.md)
+- [MCP endpoint](https://api.muxo.ai/mcp)
+- [Claude Code and Droid plugin marketplace](https://muxo.ai/.claude-plugin/marketplace.json)
+- [Codex plugin marketplace](https://muxo.ai/.agents/plugins/marketplace.json)
+
+## Skills & playbooks
+
+End-to-end business plans and app-specific skills for assistants, served as SKILL.md files.
+
+- [First-run onboarding](https://muxo.ai/plugins/muxo/skills/muxo-onboarding/SKILL.md) — the guided setup for new users.
+
+**Business use cases**
+
+- [Launch a SaaS](https://muxo.ai/plugins/muxo/skills/muxo-saas-launch/SKILL.md) · [Build an AI agent](https://muxo.ai/plugins/muxo/skills/muxo-ai-agent-ship/SKILL.md) · [Outbound sales](https://muxo.ai/plugins/muxo/skills/muxo-sales-pipeline/SKILL.md) · [Content engine](https://muxo.ai/plugins/muxo/skills/muxo-content-engine/SKILL.md)
+- [Support & incidents](https://muxo.ai/plugins/muxo/skills/muxo-support-incidents/SKILL.md) · [Finance & billing](https://muxo.ai/plugins/muxo/skills/muxo-finance-billing/SKILL.md) · [Recruiting](https://muxo.ai/plugins/muxo/skills/muxo-recruiting/SKILL.md) · [Market intelligence](https://muxo.ai/plugins/muxo/skills/muxo-market-intel/SKILL.md)
+- [Social media](https://muxo.ai/plugins/muxo/skills/muxo-social-media/SKILL.md) · [Ecommerce operations](https://muxo.ai/plugins/muxo/skills/muxo-ecommerce-ops/SKILL.md) · [Release & incidents](https://muxo.ai/plugins/muxo/skills/muxo-devops-release/SKILL.md) · [Employee onboarding](https://muxo.ai/plugins/muxo/skills/muxo-hr-onboarding/SKILL.md)
+- [Meeting & event planning](https://muxo.ai/plugins/muxo/skills/muxo-event-planning/SKILL.md) · [Data reporting](https://muxo.ai/plugins/muxo/skills/muxo-data-reporting/SKILL.md) · [Customer success](https://muxo.ai/plugins/muxo/skills/muxo-customer-success/SKILL.md)
+- [Contracts & e-signatures](https://muxo.ai/plugins/muxo/skills/muxo-contract-workflow/SKILL.md) · [Bookkeeping](https://muxo.ai/plugins/muxo/skills/muxo-accounting/SKILL.md) · [Security audit](https://muxo.ai/plugins/muxo/skills/muxo-security-audit/SKILL.md)
+
+**Individual apps**
+
+- [GitHub](https://muxo.ai/plugins/muxo/skills/muxo-github/SKILL.md) · [GitLab](https://muxo.ai/plugins/muxo/skills/muxo-gitlab/SKILL.md) · [Gmail](https://muxo.ai/plugins/muxo/skills/muxo-gmail/SKILL.md) · [Slack](https://muxo.ai/plugins/muxo/skills/muxo-slack/SKILL.md) · [Discord](https://muxo.ai/plugins/muxo/skills/muxo-discord/SKILL.md)
+- [Notion](https://muxo.ai/plugins/muxo/skills/muxo-notion/SKILL.md) · [Linear](https://muxo.ai/plugins/muxo/skills/muxo-linear/SKILL.md) · [Jira](https://muxo.ai/plugins/muxo/skills/muxo-jira/SKILL.md) · [Google Workspace](https://muxo.ai/plugins/muxo/skills/muxo-google-workspace/SKILL.md) · [Outlook](https://muxo.ai/plugins/muxo/skills/muxo-outlook/SKILL.md)
+- [HubSpot](https://muxo.ai/plugins/muxo/skills/muxo-hubspot/SKILL.md) · [Salesforce](https://muxo.ai/plugins/muxo/skills/muxo-salesforce/SKILL.md) · [Stripe](https://muxo.ai/plugins/muxo/skills/muxo-stripe/SKILL.md) · [Shopify](https://muxo.ai/plugins/muxo/skills/muxo-shopify/SKILL.md) · [Airtable](https://muxo.ai/plugins/muxo/skills/muxo-airtable/SKILL.md)
+- [Zendesk](https://muxo.ai/plugins/muxo/skills/muxo-zendesk/SKILL.md) · [QuickBooks](https://muxo.ai/plugins/muxo/skills/muxo-quickbooks/SKILL.md) · [Mailchimp](https://muxo.ai/plugins/muxo/skills/muxo-mailchimp/SKILL.md) · [LinkedIn](https://muxo.ai/plugins/muxo/skills/muxo-linkedin/SKILL.md)
+
+**Reference**
+
+- [Resources & prompts](https://muxo.ai/plugins/muxo/skills/muxo-resources/SKILL.md) · [Capabilities](https://muxo.ai/plugins/muxo/skills/muxo-capabilities/SKILL.md) · [Catalog](https://muxo.ai/plugins/muxo/skills/muxo-catalog/SKILL.md) · [Connectors](https://muxo.ai/plugins/muxo/skills/muxo-connectors/SKILL.md) · [Instant tools](https://muxo.ai/plugins/muxo/skills/muxo-instant-tools/SKILL.md) · [Errors & recovery](https://muxo.ai/plugins/muxo/skills/muxo-errors/SKILL.md)
+- [REST API](https://muxo.ai/plugins/muxo/skills/muxo-api/SKILL.md) · [API — actions & runs](https://muxo.ai/plugins/muxo/skills/muxo-api-actions/SKILL.md) · [API — instant tools](https://muxo.ai/plugins/muxo/skills/muxo-api-instant/SKILL.md) · [API — resources](https://muxo.ai/plugins/muxo/skills/muxo-api-resources/SKILL.md) · [API — billing](https://muxo.ai/plugins/muxo/skills/muxo-api-billing/SKILL.md) · [API — governance](https://muxo.ai/plugins/muxo/skills/muxo-api-governance/SKILL.md)
+- [Cloud provisioning](https://muxo.ai/plugins/muxo/skills/muxo-cloud/SKILL.md) · [Cloud billing](https://muxo.ai/plugins/muxo/skills/muxo-cloud-billing/SKILL.md) · [Databases](https://muxo.ai/plugins/muxo/skills/muxo-cloud-databases/SKILL.md) · [Hosting](https://muxo.ai/plugins/muxo/skills/muxo-cloud-hosting/SKILL.md)
+- [AI & search](https://muxo.ai/plugins/muxo/skills/muxo-cloud-ai/SKILL.md) · [Auth & identity](https://muxo.ai/plugins/muxo/skills/muxo-cloud-auth/SKILL.md) · [Infrastructure](https://muxo.ai/plugins/muxo/skills/muxo-cloud-infra/SKILL.md) · [Sandboxes](https://muxo.ai/plugins/muxo/skills/muxo-sandbox/SKILL.md) · [Cloudflare](https://muxo.ai/plugins/muxo/skills/muxo-cloudflare/SKILL.md)
+
+## Developer reference
+
+Ordinary harness use needs none of the following.
+
+- [Developer overview](https://docs.muxo.ai/developers/quickstart)
+- [Authentication](https://docs.muxo.ai/developers/authentication)
+- [MCP integration](https://docs.muxo.ai/developers/mcp)
+- [Tools and API](https://docs.muxo.ai/reference/operations): The 25 MCP tools and the matching HTTPS routes.
+- [Errors](https://docs.muxo.ai/reference/errors)
+
+## Advanced reference
+
+- [Apps and tools](https://docs.muxo.ai/catalogue)
+- [Capabilities](https://docs.muxo.ai/toolkits)
+- [Interface guidelines](https://docs.muxo.ai/design)
+- [MCP discovery](https://muxo.ai/.well-known/mcp.json)
+
+Cancellation cannot recall a request already sent to a provider. Cloud resource credentials never appear in chat; they are delivered through a one-time link the person or harness turns into a local file.
