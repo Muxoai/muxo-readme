@@ -1,9 +1,8 @@
 # Muxo docs
 
-Public documentation for [Muxo](https://muxo.ai) — what it is, how to connect your assistant,
-and the skill playbooks that teach an assistant to use it well. None of this is Muxo's product
-source; it is the same public material Muxo serves at [docs.muxo.ai](https://docs.muxo.ai) and
-[muxo.ai](https://muxo.ai).
+Documentation for [Muxo](https://muxo.ai) — what it is, how to connect your assistant, and the
+skill playbooks that teach an assistant to use it well. The same material is served at
+[docs.muxo.ai](https://docs.muxo.ai) and [muxo.ai](https://muxo.ai).
 
 ## Start here
 

@@ -6,21 +6,37 @@
 
 **Your AI assistant does real work, with your OK.**
 
-One MCP connection that lets your assistant provision cloud, call 1,700+ apps and APIs,
-and change things in your tools — behind your rules, approvals, budgets and receipts.
+Provision cloud, call 1,700+ apps and APIs, and change your tools — from the assistant you
+already use, behind your rules, approvals, budgets and receipts.
 
-[Website](https://muxo.ai) · [Docs](https://docs.muxo.ai) · [Console](https://app.muxo.ai) · [Status](https://muxo.ai/status) · [Support](https://docs.muxo.ai/support)
+[Website](https://muxo.ai) · [Docs](https://docs.muxo.ai) · [Open Muxo](https://app.muxo.ai) · [Status](https://muxo.ai/status)
 
 </div>
 
-> **This repository is a public README only.** Muxo's product source code is private.
-> Nothing here is a code repository — it exists so people can read what Muxo is on GitHub.
+## Get started
 
-## What Muxo is
+1. **Add Muxo to your assistant** — Claude Code, Codex, Cursor, Droid, ChatGPT or Claude Desktop.
+2. **Sign in** at [app.muxo.ai](https://app.muxo.ai) and connect the apps you use.
+3. **Ask for work.** Reads run right away; changes wait for your OK.
 
-Muxo is a hosted MCP server that gives the AI assistant you already use real hands.
-Connect it once to Claude Code, Codex, Cursor, Droid, ChatGPT or Claude Desktop, and your
-assistant can:
+```sh
+# Claude Code
+claude mcp add --transport http muxo https://api.muxo.ai/mcp
+
+# Codex
+codex mcp add muxo --url https://api.muxo.ai/mcp
+```
+
+- **Cursor** — add to `.cursor/mcp.json`:
+  ```json
+  { "mcpServers": { "muxo": { "url": "https://api.muxo.ai/mcp" } } }
+  ```
+- **Droid** — `droid mcp add muxo https://api.muxo.ai/mcp --type http`
+- **ChatGPT / Claude Desktop** — add the custom connector `https://api.muxo.ai/mcp`
+
+Full walkthrough: [docs.muxo.ai/quickstart](https://docs.muxo.ai/quickstart).
+
+## What you can do
 
 - **Provision cloud** — databases, caches, storage and hosting on 53 providers such as Neon,
   Supabase, Turso, Upstash, Cloudflare and Vercel. Free plans run on Muxo's managed account;
@@ -30,9 +46,6 @@ assistant can:
   security headers and dependencies.
 - **Change your apps** — GitHub, Slack, Gmail, Linear, HubSpot, Notion, Stripe and more,
   using your own sign-in.
-
-Every action is checked against your workspace's rules before it runs, and each run is
-recorded with a receipt.
 
 ## How it works
 
@@ -56,40 +69,15 @@ recorded with a receipt.
 - **Small dev teams** — one shared workspace with approvals, spending limits, per-person
   budgets and a receipt for every run.
 
-## Get started
+## Learn more
 
-Add Muxo to the assistant you already use, then sign in with your browser.
-
-```sh
-# Claude Code
-claude mcp add --transport http muxo https://api.muxo.ai/mcp
-
-# Codex
-codex mcp add muxo --url https://api.muxo.ai/mcp
-```
-
-- **Cursor** — add to `.cursor/mcp.json`:
-  ```json
-  { "mcpServers": { "muxo": { "url": "https://api.muxo.ai/mcp" } } }
-  ```
-- **Droid** — `droid mcp add muxo https://api.muxo.ai/mcp --type http`
-- **ChatGPT / Claude Desktop** — add the custom connector `https://api.muxo.ai/mcp`
-
-Full walkthrough: [docs.muxo.ai/quickstart](https://docs.muxo.ai/quickstart).
-
-## Skills and docs
-
-This repository also holds the public documentation and the skill playbooks the Muxo plugin
-installs, so you can read them on GitHub:
-
-- [`docs/`](./docs) — quickstart links, the agent docs (`skill.md`, `llms.txt`, `llms-full.txt`),
-  and an index of every skill.
-- [`skills/`](./skills) — the SKILL.md playbooks. Start with
-  [`skills/muxo/SKILL.md`](./skills/muxo/SKILL.md); it routes to the right one for an app, a
-  workflow, or a use case.
-
-The same material is served at [docs.muxo.ai](https://docs.muxo.ai) and, over MCP, as the
-resources `muxo://skills` and `muxo://skill/{slug}`.
+- **Docs** — <https://docs.muxo.ai>
+- **Console** — <https://app.muxo.ai>
+- **Skills and agent docs** — [`skills/`](./skills) and [`docs/`](./docs), also served at
+  [docs.muxo.ai](https://docs.muxo.ai) and as the MCP resources `muxo://skills` and
+  `muxo://skill/{slug}`.
+- **Status** — <https://muxo.ai/status>
+- **Support** — <https://docs.muxo.ai/support>
 
 ## Plans
 
@@ -109,15 +97,6 @@ in the console. Details: [docs.muxo.ai/billing](https://docs.muxo.ai/billing).
 - Cloud credentials come through one-time links with a short expiry.
 - Report a vulnerability privately — see [SECURITY.md](./SECURITY.md).
 
-## Links
-
-- Website — <https://muxo.ai>
-- Docs — <https://docs.muxo.ai>
-- Console — <https://app.muxo.ai>
-- Status — <https://muxo.ai/status>
-- Support — <https://docs.muxo.ai/support>
-
 ## License
 
-The Muxo name, logo and this README are © Muxo. All rights reserved. See [LICENSE](./LICENSE).
-Muxo is a product of Muxo; the Muxo software itself is proprietary and not distributed here.
+Copyright © Muxo. All rights reserved. See [LICENSE](./LICENSE).
